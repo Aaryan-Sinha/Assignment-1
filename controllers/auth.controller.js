@@ -34,3 +34,4 @@ exports.login = (req, res) => {
   const token = jwt.sign({ userId }, SECRET, { expiresIn: '1h' });
   res.json({ token });
 };
+
